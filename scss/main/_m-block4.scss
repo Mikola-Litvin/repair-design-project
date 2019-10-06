@@ -1,0 +1,38 @@
+.main-block4 {
+  @include flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 104px;
+  padding-right: 100px;
+
+  @media (max-width: 375px) {
+    padding-top: 60px;
+    padding-left: $padd1;
+    padding-right: $padd1;
+  }
+
+  & .h2 {
+    flex-basis: 100%;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+}
+
+.mb4-col__list {
+  width: 330px;
+  padding: 25px 41px 36px;
+
+  list-style-type: disc;
+
+  background-color: $bg3;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  transform: translateY(-50%) translateX(10%);
+
+  @media (max-width: 375px) {
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.mb4-col__image {
+  width: 100%;
+}

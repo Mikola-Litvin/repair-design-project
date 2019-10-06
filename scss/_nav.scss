@@ -1,0 +1,29 @@
+.nav {
+  flex-basis: 581px;
+  margin-left: 50px;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.menu {
+  @include flex;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-family: "Futurabookc";
+  font-size: 14px;
+  color: $color1;
+  @include upper;
+  text-decoration: none;
+
+  &:hover {
+    color: $color2;
+  }
+}
+
+.menu__link_selected {
+  color: $color2;
+}
