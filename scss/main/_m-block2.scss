@@ -8,7 +8,7 @@
   background-color: $bg1;
 
   @media (max-width: 375px) {
-    height: 698px;
+    height: 726px;
     padding-top: 36px;
 
     background-image: none;
@@ -36,6 +36,12 @@
     padding-left: $padd1;
     padding-right: $padd1;
 
+    & .h2_hazel {
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
     & .pagination {
       display: none;
     }
@@ -60,17 +66,23 @@
   color: $color1;
 
   @media (max-width: 375px) {
-    font-size: 14px;
-    text-align: center;
+    margin-bottom: 38px;
     padding-left: 14px;
     padding-right: 14px;
+
+    font-size: 14px;
+    text-align: center;
   }
 }
 
 .mb2-col__list {
   @include flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 6px;
+
+  @media (max-width: 375px) {
+    margin-bottom: 0;
+  }
 }
 
 .mb2-col__list-item {
@@ -85,6 +97,7 @@
   @media (max-width: 375px) {
     flex-basis: 50%;
     font-size: 14px;
+    height: 95px;
   }
 
   & strong {
@@ -99,6 +112,8 @@
 
     
     @media (max-width: 375px) {
+      margin-bottom: 11px;
+
       font-size: 14px;
     }
   }

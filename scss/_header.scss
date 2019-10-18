@@ -23,7 +23,11 @@ body {
 
   & .h2__item {
     display: block;
-    margin: 11px auto 0;
+    margin: 13px auto 0;
+
+    @media (max-width: 375px) {
+      margin-top: 18px;
+    }
   }
 }
 
@@ -60,6 +64,15 @@ body {
       display: none;
     }
   }
+}
+
+.h3 {
+  margin-bottom: 14px;
+
+  font-family: $font3;
+  font-size: 18px;
+  font-weight: normal;
+  color: $color6;
 }
 
 .header,
@@ -257,6 +270,7 @@ body {
   @media (max-width: 375px) {
     @include flex;
     width: 100%;
+    margin-bottom: 33px;
   }
 }
 
