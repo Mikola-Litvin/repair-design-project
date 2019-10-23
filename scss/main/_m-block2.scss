@@ -7,6 +7,12 @@
   background: url(../assets/images/bg-block2.jpg);
   background-color: $bg1;
 
+  @media (max-width: 1230px) {
+    justify-content: center;
+    height: 934px;
+    padding-top: 30px;
+  }
+
   @media (max-width: 375px) {
     height: 726px;
     padding-top: 36px;
@@ -28,7 +34,14 @@
     margin-bottom: 27px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 1230px) {
+
+    & .pagination {
+      display: none;
+    }
+  }
+
+  @media (max-width: 550px) {
     flex-basis: 100%;
     align-items: flex-start;
     margin-right: 0;
@@ -41,10 +54,6 @@
       margin: 0 auto;
       margin-bottom: 24px;
     }
-
-    & .pagination {
-      display: none;
-    }
   }
 }
 
@@ -52,7 +61,7 @@
   flex-basis: 847px;
   overflow: hidden;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1230px) {
     display: none;
   }
 }

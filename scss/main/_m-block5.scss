@@ -3,7 +3,12 @@
   justify-content: space-between;
   padding-bottom: 212px;
 
-  @media (max-width: 375px) {
+
+  @media (max-width: 1279px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 508px) {
     display: none;
   }
 }
@@ -13,6 +18,10 @@
   overflow: hidden;
 
   background: url(../assets/images/bg-with-building.jpg) no-repeat 0 40px;
+
+  @media (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .mb5-col__list {
@@ -116,6 +125,10 @@
 .mb5-col_right {
   flex-basis: 608px;
   padding-top: 51px;
+
+  @media (max-width: 1279px) {
+    flex-basis: 509px;
+  }
 
   & .form {
     width: 509px;

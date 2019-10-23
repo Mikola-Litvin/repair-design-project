@@ -60,7 +60,7 @@ body {
 
     border: 1px solid $color2;
 
-    @media (max-width: 375px) {
+    @media (max-width: 550px) {
       display: none;
     }
   }
@@ -86,14 +86,21 @@ body {
 
   background-color: $bg1;
 
-  @media (max-width: 375px) {
-    height: 57px;
-    padding-left: $padd1;
-    padding-right: $padd1;
+
+  @media (max-width: 1140px) {
 
     & .button {
       display: none;
     }
+  }
+
+  @media (max-width: 976px) {
+    padding-left: $padd1;
+    padding-right: $padd1;
+  }
+
+  @media (max-width: 486px) {
+    height: 57px;
   }
 
   & .button {
@@ -107,6 +114,12 @@ body {
   padding-left: 92px;
   padding-right: 92px;
 
+  @media (max-width: 976px) {
+    height: 67px;
+    padding-left: $padd1;
+    padding-right: $padd1;
+  }
+
   @media (max-width: 375px) {
     display: none;
   }
@@ -119,7 +132,12 @@ body {
   color: $color2;
   @include upper;
 
-  @media (max-width: 375px) {
+
+  @media (max-width: 1248px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 976px) {
     font-size: 12px;
   }
 }
@@ -131,7 +149,7 @@ body {
   font-size: 14px;
   color: $color2;
 
-  @media (max-width: 375px) {
+  @media (max-width: 976px) {
     margin-left: 0;
 
     font-size: 12px;
@@ -167,40 +185,6 @@ body {
   background-color: transparent;
   border-color: $color1;
   box-shadow: none;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 0;
-  left: -82px;
-
-  @include flex;
-  justify-content: center;
-  width: 247px;
-  height: 97px;
-
-  text-decoration: none;
-  color: $color1;
-  @include upper;
-
-  background-color: $bg1;
-  transform: translateY(50%);
-
-  @media (max-width: 375px) {
-    display: none;
-  }
-
-  & span {
-    align-self: center;
-    margin-right: 18px;
-
-    font-family: $font3;
-    font-size: 14px;
-  }
-
-  &:hover {
-    color: $color2;
-  }
 }
 
 .pagination__arrow {

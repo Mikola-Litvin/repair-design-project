@@ -2,11 +2,23 @@
   height: 719px;
   transform: translateY(-47%);
 
-  @media (max-width: 375px) {
-    height: auto;
+  @media (max-width: 827px) {
+    height: 740px;
     padding-left: $padd1;
     padding-right: $padd1;
+  }
 
+  @media (max-width: 627px) {
+    height: 770px;
+  }
+
+  @media (max-width: 440px) {
+    height: 810px;
+  }
+
+  @media (max-width: 375px) {
+    height: auto;
+   
     transform: none;
     background-color: $bg1;
   }
@@ -16,7 +28,7 @@
     margin: 0 auto;
     display: block;
 
-    @media (max-width: 375px) {
+    @media (max-width: 827px) {
       width: 100%;
     }
   }
@@ -37,7 +49,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @media (max-width: 375px) {
+    @media (max-width: 827px) {
       flex-direction: column;
     }
   }
@@ -85,6 +97,10 @@
 
   & .form__input-text[id="name"] {
 
+    @media (max-width: 827px) {
+      margin-bottom: 30px;
+    }
+
     @media (max-width: 375px) {
       margin-bottom: 60px;
     }
@@ -95,11 +111,14 @@
     margin-top: 31px;
     order: 4;
 
-    @media (max-width: 375px) {
+    @media (max-width: 827px) {
       margin-top: 27px;
       margin-bottom: 37px;
-      margin-left: 0;
       order: 3;
+    }
+
+    @media (max-width: 375px) {
+      margin-left: 0;
     }
   }
 
@@ -146,9 +165,12 @@
   & .form__item_submit {
     order: 3;
 
+    @media (max-width: 827px) {
+      order: 4;
+    }
+
     @media (max-width: 375px) {
       width: 100%;
-      order: 4;
 
       transform: translateY(50%);
     }
@@ -174,18 +196,25 @@
   line-height: 1.7;
   color: $color6;
 
-  @media (max-width: 375px) {
+  @media (max-width: 827px) {
     width: 100%;
     margin-top: 16px;
     margin-bottom: 28px;
+  }
 
+  @media (max-width: 375px) {
     font-size: 14px;
     color: $color1;
   }
 }
 
 .youtube {
+  max-width: 817px;
   margin-bottom: 59px;
+
+  @media (max-width: 827px) {
+    width: 100%;
+  }
 
   @media (max-width: 375px) {
     margin-bottom: 25px;
@@ -196,6 +225,10 @@
   margin-top: 31px;
 
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 827px) {
+    width: 100%;
+  }
 
   @media (max-width: 375px) {
     width: 100%;

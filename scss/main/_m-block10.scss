@@ -6,7 +6,12 @@
   padding-right: 100px;
   padding-bottom: 380px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1331px) {
+    padding-left: $padd1;
+    padding-right: $padd1;
+  }
+
+  @media (max-width: 947px) {
     display: none;
   }
 
@@ -28,6 +33,14 @@
   color: #959595;
 
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 1331px) {
+    width: 320px;
+  }
+
+  @media (max-width: 995px) {
+    width: 300px;
+  }
 
   & strong {
     display: block;
@@ -76,6 +89,10 @@
   line-height: 1.35;
   text-align: center;
   color: $color6;
+
+  @media (max-width: 1331px) {
+    padding: 0;
+  }
 }
 
 .mb10-col__image {

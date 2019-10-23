@@ -3,19 +3,35 @@
 
   transform: translateY(-73%);
 
-  @media (max-width: 375px) {
-    height: 1734px;
+
+
+  @media (max-width: 947px) {
+    height: 2000px;
+    padding-top: 80px;
     padding-left: $padd1;
     padding-right: $padd1;
-
+    
     transform: translateY(0);
     background-color: $bg2;
+  }
+  
+  @media (max-width: 882px) {
+    height: 1800px;
+  }
+
+  @media (max-width: 375px) {
+    height: 1734px;
+    padding-top: 0;
   }
 
   & > * {
     width: 817px;
     margin: 0 auto;
     display: block;
+
+    @media (max-width: 947px) {
+      width: 100%;
+     }
 
     @media (max-width: 375px) {
       width: 100%;
@@ -32,7 +48,7 @@
 
     border: 1px solid $color2;
 
-    @media (max-width: 375px) {
+    @media (max-width: 882px) {
       display: none;
      }
   }
@@ -40,6 +56,14 @@
 
 .mb9-col {
   position: relative;
+
+  @media (max-width: 1130px) {
+    width: 200px;
+   }
+
+   @media (max-width: 375px) {
+    width: 272px;
+   }
 }
 
 .mb9-col__icon {
@@ -66,7 +90,13 @@
     line-height: 1.7;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 947px) {
+    width: 100%;
+
+    color: $color1;
+   }
+
+  @media (max-width: 882px) {
    display: none;
   }
 }
@@ -76,9 +106,16 @@
 
   color: $color1;
 
+  @media (max-width: 947px) {
+    width: 100%;
+   }
+
+   @media (max-width: 882px) {
+    display: block;
+   }
+
   @media (max-width: 375px) {
     display: block;
-    width: 100%;
 
     font-size: 15px;
    }
@@ -134,8 +171,14 @@
   width: 1063px;
   height: 476px;
 
-  @media (max-width: 375px) {
-    width: 100%;
-    padding-left: 38px;
+  @media (max-width: 1130px) {
+    width: 800px;
    }
+
+   @media (max-width: 947px) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+  }
 }

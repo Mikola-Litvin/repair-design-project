@@ -5,6 +5,16 @@
 
   background-color: $bg1;
 
+  @media (max-width: 947px) {
+    height: 1200px;
+  }
+
+  @media (max-width: 940px) {
+    height: 900px;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
   @media (max-width: 375px) {
     display: none;
   }
@@ -18,6 +28,19 @@
   padding-top: 74px;
   padding-left: 101px;
   padding-right: 29px;
+
+  @media (max-width: 1264px) {
+    flex-basis: 443px;
+    padding-left: 50px;
+  }
+
+  @media (max-width: 895px) {
+    flex-basis: 375px;
+    margin-right: 0;
+    padding-top: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
   & .h2_hazel {
     width: 220px;
@@ -45,6 +68,33 @@
 .mb8-col_right {
   flex-basis: 897px;
   padding-top: 174px;
+
+  @media (max-width: 1264px) {
+    flex-basis: 797px;
+  }
+
+  @media (max-width: 895px) {
+    display: none;
+  }
+
+  & .mb8-col__image {
+
+    @media (max-width: 1366px) {
+      max-width: 665px;
+    }
+
+    @media (max-width: 1264px) {
+      max-width: 565px;
+    }
+
+    @media (max-width: 1066px) {
+      max-width: 500px;
+    }
+
+    @media (max-width: 992px) {
+      max-width: 400px;
+    }
+  }
 }
 
 .mb8-col__text {

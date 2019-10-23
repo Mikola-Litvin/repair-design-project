@@ -3,8 +3,13 @@
 
   background: url(../assets/images/bg-block11.jpg) no-repeat 0 0 / cover;
 
-  @media (max-width: 375px) {
+  @media (max-width: 900px) {
     height: auto;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 375px) {
+    padding-bottom: 0;
 
     background-image: none;
     background-color: $bg2;
@@ -31,11 +36,14 @@
     background: url(../assets/images/big-form-bg.jpg) no-repeat 0 0 / cover;
     background-color: $bg2;
 
-    @media (max-width: 375px) {
+    @media (max-width: 900px) {
       width: 100%;
       height: auto;
       padding: $padd1;
+      transform: translateY(0);
+    }
 
+    @media (max-width: 375px) {
       background-image: none;
       transform: translateY(0);
     }
@@ -61,6 +69,10 @@
 
   & .form__item:nth-of-type(1) {
     margin-right: 49px;
+
+    @media (max-width: 375px) {
+      margin-right: 0;
+    }
   }
 
   & .form__item:nth-of-type(1),
@@ -172,9 +184,12 @@
   color: $color2;
   @include upper;
 
-  @media (max-width: 375px) {
+  @media (max-width: 882px) {
     width: 100%;
     margin-top: 31px;
+  }
+
+  @media (max-width: 375px) {
     order: 4;
 
     font-size: 18px;
@@ -202,13 +217,16 @@
   width: 883px;
   margin-top: -180px;
 
+  @media (max-width: 900px) {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: $padd1;
+    padding-right: $padd1;
+  }
+
   @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 0px;
-    padding-left: $padd1;
-    padding-right: $padd1;
   }
 }
 
